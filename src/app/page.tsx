@@ -11,7 +11,7 @@ import ProductCardOne from '@/components/sections/product/ProductCardOne';
 import SocialProofOne from '@/components/sections/socialProof/SocialProofOne';
 import TestimonialCardTwo from '@/components/sections/testimonial/TestimonialCardTwo';
 import TextSplitAbout from '@/components/sections/about/TextSplitAbout';
-import { Facebook, Instagram, Phone, CheckCircle, WhatsApp } from "lucide-react";
+import { Facebook, Instagram, Phone, CheckCircle, MessageCircle } from "lucide-react";
 
 export default function LandingPage() {
   return (
@@ -226,7 +226,7 @@ export default function LandingPage() {
                  hover:scale-110 active:scale-95
                  backdrop-blur-sm bg-white/20 border border-white/30"
     >
-      <WhatsApp size={24} />
+      <MessageCircle size={24} />
       {/* Tooltip */}
       <span className="absolute right-full mr-4 px-3 py-1 bg-gray-800 text-white text-sm rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
         WhatsApp
