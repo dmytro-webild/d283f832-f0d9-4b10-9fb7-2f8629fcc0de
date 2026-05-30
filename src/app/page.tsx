@@ -11,7 +11,7 @@ import ProductCardOne from '@/components/sections/product/ProductCardOne';
 import SocialProofOne from '@/components/sections/socialProof/SocialProofOne';
 import TestimonialCardTwo from '@/components/sections/testimonial/TestimonialCardTwo';
 import TextSplitAbout from '@/components/sections/about/TextSplitAbout';
-import { Facebook, Instagram, Phone, CheckCircle } from "lucide-react";
+import { Facebook, Instagram, Phone, CheckCircle, WhatsApp } from "lucide-react";
 
 export default function LandingPage() {
   return (
@@ -210,6 +210,70 @@ export default function LandingPage() {
       ]}
     />
   </div>
+
+  {/* Floating Social Contact Buttons */}
+  <div className="fixed bottom-4 right-4 z-50 flex flex-col space-y-4 md:bottom-8 md:right-8">
+    {/* WhatsApp Button */}
+    <a
+      href="https://wa.me/21652502053"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="WhatsApp"
+      title="WhatsApp"
+      className="group relative flex items-center justify-center w-14 h-14 rounded-full shadow-lg cursor-pointer
+                 transition-all duration-300 ease-in-out
+                 bg-gradient-to-br from-[#25D366] to-[#128C7E] text-white
+                 hover:scale-110 active:scale-95
+                 backdrop-blur-sm bg-white/20 border border-white/30"
+    >
+      <WhatsApp size={24} />
+      {/* Tooltip */}
+      <span className="absolute right-full mr-4 px-3 py-1 bg-gray-800 text-white text-sm rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
+        WhatsApp
+      </span>
+    </a>
+
+    {/* Instagram Button */}
+    <a
+      href="https://www.instagram.com/dar_chennoufi/"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Instagram"
+      title="Instagram"
+      className="group relative flex items-center justify-center w-14 h-14 rounded-full shadow-lg cursor-pointer
+                 transition-all duration-300 ease-in-out
+                 bg-gradient-to-br from-[#833AB4] via-[#FD1D1D] to-[#FCB045] text-white
+                 hover:scale-110 active:scale-95
+                 backdrop-blur-sm bg-white/20 border border-white/30"
+    >
+      <Instagram size={24} />
+      {/* Tooltip */}
+      <span className="absolute right-full mr-4 px-3 py-1 bg-gray-800 text-white text-sm rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
+        Instagram
+      </span>
+    </a>
+
+    {/* Facebook Button */}
+    <a
+      href="https://www.facebook.com/darchennoufi/"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Facebook"
+      title="Facebook"
+      className="group relative flex items-center justify-center w-14 h-14 rounded-full shadow-lg cursor-pointer
+                 transition-all duration-300 ease-in-out
+                 bg-gradient-to-br from-[#4267B2] to-[#3B5998] text-white
+                 hover:scale-110 active:scale-95
+                 backdrop-blur-sm bg-white/20 border border-white/30"
+    >
+      <Facebook size={24} />
+      {/* Tooltip */}
+      <span className="absolute right-full mr-4 px-3 py-1 bg-gray-800 text-white text-sm rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
+        Facebook
+      </span>
+    </a>
+  </div>
+
       </ReactLenis>
     </ThemeProvider>
   );
