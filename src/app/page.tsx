@@ -223,7 +223,7 @@ export default function LandingPage() {
       className="group relative flex items-center justify-center w-14 h-14 rounded-full shadow-lg cursor-pointer
                  transition-all duration-300 ease-in-out
                  bg-gradient-to-br from-[#25D366] to-[#128C7E] text-white
-                 hover:scale-110 active:scale-95
+                 hover:scale-110 active:scale-95 hover:shadow-[0_0_15px_5px_rgba(37,211,102,0.7)]
                  backdrop-blur-sm bg-white/20 border border-white/30"
     >
       <MessageCircle size={24} />
@@ -243,7 +243,7 @@ export default function LandingPage() {
       className="group relative flex items-center justify-center w-14 h-14 rounded-full shadow-lg cursor-pointer
                  transition-all duration-300 ease-in-out
                  bg-gradient-to-br from-[#833AB4] via-[#FD1D1D] to-[#FCB045] text-white
-                 hover:scale-110 active:scale-95
+                 hover:scale-110 active:scale-95 hover:shadow-[0_0_15px_5px_rgba(253,29,29,0.7)]
                  backdrop-blur-sm bg-white/20 border border-white/30"
     >
       <Instagram size={24} />
@@ -263,7 +263,7 @@ export default function LandingPage() {
       className="group relative flex items-center justify-center w-14 h-14 rounded-full shadow-lg cursor-pointer
                  transition-all duration-300 ease-in-out
                  bg-gradient-to-br from-[#4267B2] to-[#3B5998] text-white
-                 hover:scale-110 active:scale-95
+                 hover:scale-110 active:scale-95 hover:shadow-[0_0_15px_5px_rgba(66,103,178,0.7)]
                  backdrop-blur-sm bg-white/20 border border-white/30"
     >
       <Facebook size={24} />
